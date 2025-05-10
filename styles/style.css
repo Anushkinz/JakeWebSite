@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+body {
+  position: relative;
+}
+
+/* ---------------------------------- header styles */
+.headerBlock {
+  padding: 20px;
+  background: none;
+  position: fixed;
+  width: 100%;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #efefef99;
+  width: 100%;
+  height: 56px;
+  padding: 0 20px;
+}
+.headerButton a {
+  background-color: #5b7687;
+  padding: 8px 30px;
+  border-radius: 8px;
+  color: #fffef8;
+}
+header a {
+  text-decoration: none;
+}
+
+.mainLogo img {
+  display: block;
+  width: 124px;
+}
+.headerMenu a {
+  text-decoration: none;
+  color: #3e546b;
+}
+.headerMenu {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.upHeader {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+.upHeader a {
+  text-decoration: none;
+  color: #3e546b;
+  font-size: 20px;
+}
+.upHeader img {
+  width: 32px;
+}
+/* ------------------------- main section styles  */
+
+.main {
+  background: url("../images/mainBack.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 48px;
+  color: #78767c;
+}
