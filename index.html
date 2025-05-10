@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/bootstrap.min.css" />
     <link rel="stylesheet" href="./styles/style.css" />
     <title>Document</title>
   </head>
@@ -76,5 +77,96 @@
         </div>
       </section>
     </main>
+    <section class="application">
+      <div class="container">
+        <section class="application__menu">
+          <article class="application__offer">
+            <h1 class="application__title">
+              не нашли <br />
+              подходящий тур?
+            </h1>
+            <p class="application__subtitle">ОРГАНИЗУЕМ ДЛЯ ВАС <span class="application__accent">ИНДИВИДУАЛЬНЫЙ ТУР</span></p>
+          </article>
+          <article class="application__details">
+            <main class="application__advantages">
+              <figure class="application__advantage">
+                <img class="application__icon" src="./images/check.svg" alt="check" />
+                <figcaption class="application__description">Эксклюзивная программа</figcaption>
+              </figure>
+              <figure class="application__advantage">
+                <img class="application__icon" src="./images/check.svg" alt="check" />
+                <figcaption class="application__description">Подберем тур под ваш бюджет</figcaption>
+              </figure>
+              <figure class="application__advantage">
+                <img class="application__icon" src="./images/check.svg" alt="check" />
+                <figcaption class="application__description">Учитываем все ваши пожелания</figcaption>
+              </figure>
+            </main>
+            <button class="application__button">оставить заявку</button>
+          </article>
+        </section>
+      </div>
+    </section>
+    <section class="answer">
+      <div class="container">
+        <section class="answer__menu">
+          <h1 class="answer__title">ВОПРОС - ОТВЕТ</h1>
+          <main class="answer__questions">
+            <article class="answer__item">
+              <div class="answer__question-header">
+                <span class="answer__question-text">Как забронировать тур?</span>
+                <button class="answer__question-toggle">
+                  <img class="answer__question-icon" src="./images/plus.svg" alt="plus">
+                </button>
+              </div>
+             <p class="answer__answer-text answer__answer-text_hidden">Бронь мест осуществляется по предоплате 50%. Для бронирования путешесвия оставьте заявку на нашем сайте - наш отдел заботы свяжется с вами в ближайшее время и проконсультирует по всем вопросам</p>
+            </article>
+            <article class="answer__item">
+              <div class="answer__question-header">
+                <span class="answer__question-text">Можно ли поехать на своем транспорте?</span>
+                <button class="answer__question-toggle">
+                  <img class="answer__question-icon" src="./images/plus.svg" alt="plus">
+                </button>
+              </div>
+             <p class="answer__answer-text answer__answer-text_hidden">Да, можно. Но стоимость тура не изменится, так как количество мест в туре ограниченно и трансфер мы выкупаем полностью под группу.</p>
+            </article>
+            <article class="answer__item ">
+              <div class="answer__question-header">
+                <span class="answer__question-text">Куда можно поехать с ребенком?</span>
+                <button class="answer__question-toggle">
+                  <img class="answer__question-icon" src="./images/plus.svg" alt="plus">
+                </button>
+              </div>
+             <div class="answer__answer-text answer__item-third answer__answer-text_hidden">
+              <p>Список туров для поездки с детьми:</p>
+              <ul class="answer__answer-text-list">
+                <li><a href="#">КБЖД</a></li>
+                <li><a href="#">ББТ 1</a></li>
+                <li><a href="#">КБЖД</a></li>
+                <li><a href="#">КБЖД</a></li>
+              </ul>
+             </div>
+            </article>
+            <article class="answer__item">
+              <div class="answer__question-header">
+                <span class="answer__question-text">Есть ли снаряжение в аренду ?</span>
+                <button class="answer__question-toggle">
+                  <img class="answer__question-icon" src="./images/plus.svg" alt="plus">
+                </button>
+              </div>
+             <p class="answer__answer-text answer__answer-text_hidden">
+              Да, мы предоставляем в аренду снаряжение:
+
+              <span>
+                Рюкзак 80 л - 500р/сутки <br>
+Спальник +10 комфорт - 300р/сутки
+              </span>
+             </p>
+            </article>
+          </main>
+        </section>
+      </div>
+    </section>
+    <script src="./js/index.js"></script>
   </body>
 </html>
