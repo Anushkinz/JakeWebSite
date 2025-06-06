@@ -9,3 +9,21 @@ questions.forEach(questionItem => {
     answerText.classList.toggle("answer__answer-text_hidden");
   });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const myHiddenElement = document.querySelector('.header');
+
+    const viewportHeight = window.innerHeight;
+    const scrollThreshold = viewportHeight; 
+
+    function handleScroll() {
+        if (window.scrollY > scrollThreshold) {
+            myHiddenElement.classList.add('is-visible');
+        } else {
+            myHiddenElement.classList.remove('is-visible');
+        }
+    }
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll();
+});

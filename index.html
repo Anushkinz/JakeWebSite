@@ -8,42 +8,46 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="headerBlock">
-      <div class="upHeader">
-        <div>
-          <a href="tel:+996704313147"> +996 (704) 313-147 </a>
-        </div>
-        <div>
-          <a href="https://wa.me/996704313147?text=Hi Jake">
-            <img src="./images/whatsapp.svg" alt="" />
-          </a>
-          <a
-            href="https://www.instagram.com/ice_jack_sparrow?igsh=MWI1cDRvOTNiYzJ3Mg=="
-          >
-            <img src="./images/instagram.svg" alt="" />
-          </a>
+    <section class="header">
+      <div class="container">
+        <div class="headerBlock">
+          <div class="upHeader">
+            <div>
+              <a href="tel:+996704313147"> +996 (704) 313-147 </a>
+            </div>
+            <div>
+              <a href="https://wa.me/996704313147?text=Hi Jake">
+                <img src="./images/whatsapp.svg" alt="" />
+              </a>
+              <a
+                href="https://www.instagram.com/ice_jack_sparrow?igsh=MWI1cDRvOTNiYzJ3Mg=="
+              >
+                <img src="./images/instagram.svg" alt="" />
+              </a>
+            </div>
+          </div>
+          <header>
+            <div class="mainLogo">
+              <img
+                src="https://optim.tildacdn.com/tild3264-6166-4366-a530-396138623865/-/resize/264x/-/format/webp/BAIKAL_TRACK_3.png"
+                alt=""
+              />
+            </div>
+            <div class="headerMenu">
+              <a href="">Афиша туров</a>
+              <a href="">Расписание</a>
+              <a href="">О нас</a>
+              <a href="">Команда</a>
+              <a href="">FAQ</a>
+              <a href="">Контакты</a>
+            </div>
+            <div class="headerButton">
+              <a href="">записаться в тур</a>
+            </div>
+          </header>
         </div>
       </div>
-      <header>
-        <div class="mainLogo">
-          <img
-            src="https://optim.tildacdn.com/tild3264-6166-4366-a530-396138623865/-/resize/264x/-/format/webp/BAIKAL_TRACK_3.png"
-            alt=""
-          />
-        </div>
-        <div class="headerMenu">
-          <a href="">Афиша туров</a>
-          <a href="">Расписание</a>
-          <a href="">О нас</a>
-          <a href="">Команда</a>
-          <a href="">FAQ</a>
-          <a href="">Контакты</a>
-        </div>
-        <div class="headerButton">
-          <a href="">записаться в тур</a>
-        </div>
-      </header>
-    </div>
+    </section>
     <main>
       <section class="main">
         <h1>Central Asia tours</h1>
@@ -52,31 +56,50 @@
           Asia
         </h5>
       </section>
-      <section class="tours">
-        <h2>афиша туров</h2>
-        <h4>куда поехать с BAIKAL TRACK?</h4>
-        <div class="typeTours">
-          <a href="">ВСЕ</a>
-          <a href="">ПОХОДЫ</a>
-          <a href="">ГОРНЫЙ ТРЕКИНГ</a>
-          <a href="">СПЛАВЫ</a>
-          <a href="">ЛАЙТ ЭКСКУРСИИ</a>
-        </div>
-        <div class="toursCard">
-          <div class="tourCard">
-            <div>
-              <h3>озеро серебряное</h3>
-              <p>[ 1 день ]</p>
-              <a href="">программа тура</a>
-            </div>
-            <p>
-              Однодневный поход, в одно из красивейших мест Восточных Саян,
-              купание в озере
-            </p>
-          </div>
-        </div>
-      </section>
     </main>
+    <section class="team reise tours">
+      <div class="container">
+        <section class="team__menu reise__menu tours__menu">
+          <article class="team__header">
+            <h1 class="team__title">афиша туров</h1>
+            <p class="team__subtitle">куда поехать с BAIKAL TRACK?</p>
+          </article>
+
+          <main class="reise-main">
+            <nav class="reise__nav tours__nav">
+              <button class="reise__nav-item">ВСЕ</button>
+              <button class="reise__nav-item">ПОХОДЫ</button>
+              <button class="reise__nav-item">ГОРНЫЙ ТРЕКИНГ</button>
+              <button class="reise__nav-item">СПЛАВЫ</button>
+              <button class="reise__nav-item">ЛАЙТ ЭКСКУРСИИ</button>
+            </nav>
+            <article class="tour-content">
+              <a href="./tour.html" class="tour-card">
+                <p class="tour-card__title">озеро серебряное</p>
+                <span class="tour-card__duration">[ 1 день ]</span>
+                <button class="tour-card__button tour-card__button--primary">
+                  программа тура
+                </button>
+              </a>
+              <a href="./tour.html" class="tour-card">
+                <p class="tour-card__title">озеро серебряное</p>
+                <span class="tour-card__duration">[ 1 день ]</span>
+                <button class="tour-card__button tour-card__button--primary">
+                  программа тура
+                </button>
+              </a>
+              <a href="./tour.html" class="tour-card">
+                <p class="tour-card__title">озеро серебряное</p>
+                <span class="tour-card__duration">[ 1 день ]</span>
+                <button class="tour-card__button tour-card__button--primary">
+                  программа тура
+                </button>
+              </a>
+            </article>
+          </main>
+        </section>
+      </div>
+    </section>
     <section class="info">
       <div class="container">
         <section class="info__menu">
@@ -458,11 +481,31 @@
           <article class="team__header reviews__header">
             <h1 class="team__title">#ОТЗЫВЫ</h1>
           </article>
-          <main class="team__main  reviews__main">
+          <main class="team__main reviews__main">
             <div class="team-member reviews__member">
               <img src="./images/otzyv.svg" alt="" />
             </div>
           </main>
+        </section>
+      </div>
+    </section>
+    <section class="footer">
+      <div class="container">
+        <section class="footer__menu">
+          <article class="footer__item">
+            <h2 class="footer__title">Остались вопросы?</h2>
+            <p class="footer__text">
+              Напишите нам в WhatsApp или Telegramm, мы ответим на все ваши
+              вопросы
+            </p>
+            <button class="footer__button">WhatsApp</button>
+            <button class="footer__button">Telegram</button>
+          </article>
+          <article class="footer__item">
+            <p class="footer__text">
+              или звоните по телефону: +7 (984) 270-44-47
+            </p>
+          </article>
         </section>
       </div>
     </section>
