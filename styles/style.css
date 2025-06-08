@@ -30,7 +30,7 @@ body {
 
 /* ---------------------------------- header styles */
 .header {
-  padding: 20px;
+  padding: 20px 0;
   box-sizing: border-box;
   position: fixed;
   top: 0;
@@ -52,11 +52,10 @@ body {
 
 header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   border-radius: 10px;
   background: rgb(224, 221, 221);
-
+  gap: 10%;
   padding: 20px;
 }
 .headerButton a {
@@ -68,6 +67,27 @@ header {
 header a {
   text-decoration: none;
 }
+.header__controllers{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+.headerButton__link{
+  text-transform: uppercase;
+  font-weight: 600;
+text-decoration: none;
+
+}
+
+.headerMenu a{
+    font-weight: 600;
+    color: #597797;
+    transition: .4s ease-in-out;
+  }
+  .headerMenu a:hover{
+   color: #3e546b;
+  }
 
 .mainLogo img {
   display: block;
@@ -75,7 +95,6 @@ header a {
 }
 .headerMenu a {
   text-decoration: none;
-  color: #3e546b;
 }
 .headerMenu {
   display: flex;
@@ -632,7 +651,7 @@ header a {
 .why-we__item-aside{
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   width: 90%;
   padding-top: 50px;
 }

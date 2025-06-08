@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/bootstrap.min.css" />
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/media.css" />
     <title>Document</title>
   </head>
   <body>
@@ -27,22 +28,29 @@
             </div>
           </div>
           <header>
-            <div class="mainLogo">
+            <a href="./index.html" class="mainLogo">
               <img
                 src="https://optim.tildacdn.com/tild3264-6166-4366-a530-396138623865/-/resize/264x/-/format/webp/BAIKAL_TRACK_3.png"
                 alt=""
               />
-            </div>
-            <div class="headerMenu">
-              <a href="">Афиша туров</a>
-              <a href="">Расписание</a>
-              <a href="">О нас</a>
-              <a href="">Команда</a>
-              <a href="">FAQ</a>
-              <a href="">Контакты</a>
-            </div>
-            <div class="headerButton">
-              <a href="">записаться в тур</a>
+            </a>
+            <article class="header__controllers">
+              <div class="headerMenu">
+                <a href="./tour.html">Афиша туров</a>
+                <a href="#reise">Расписание</a>
+                <a href="#info">О нас</a>
+                <a href="#team">Команда</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contacts">Контакты</a>
+              </div>
+              <div class="headerButton">
+                <a class="headerButton__link" href="">записаться в тур</a>
+              </div>
+            </article>
+            <div class="hamburger hamburger--slider">
+              <div class="hamburger-box">
+                <div class="hamburger-inner"></div>
+              </div>
             </div>
           </header>
         </div>
@@ -100,7 +108,7 @@
         </section>
       </div>
     </section>
-    <section class="info">
+    <section id="info" class="info">
       <div class="container">
         <section class="info__menu">
           <article class="info__details">
@@ -127,7 +135,7 @@
         </section>
       </div>
     </section>
-    <section class="application">
+    <section id="application" class="application">
       <div class="container">
         <section class="application__menu">
           <article class="application__offer">
@@ -178,7 +186,7 @@
         </section>
       </div>
     </section>
-    <section class="team reise">
+    <section id="reise" class="team reise">
       <div class="container">
         <section class="team__menu reise__menu">
           <article class="team__header">
@@ -211,7 +219,7 @@
         </section>
       </div>
     </section>
-    <section class="team philosophien">
+    <section id="philosophien" class="team philosophien">
       <div class="container">
         <section class="team__menu philosophien__menu">
           <article class="team__header">
@@ -246,7 +254,7 @@
         </section>
       </div>
     </section>
-    <section class="team">
+    <section id="team" class="team">
       <div class="container">
         <section class="team__menu">
           <article class="team__header">
@@ -278,7 +286,7 @@
         </section>
       </div>
     </section>
-    <section class="why-we">
+    <section id="why" class="why-we">
       <div class="container">
         <section class="why-we__menu">
           <article class="why-we__header">
@@ -382,7 +390,7 @@
         </section>
       </div>
     </section>
-    <section class="answer">
+    <section id="answer" class="answer">
       <div class="container">
         <section class="answer__menu">
           <h1 class="answer__title">ВОПРОС - ОТВЕТ</h1>
@@ -475,7 +483,7 @@
         </section>
       </div>
     </section>
-    <section class="team reviews">
+    <section id="reviews" class="team reviews">
       <div class="container">
         <section class="team__menu reviews__menu">
           <article class="team__header reviews__header">
@@ -503,12 +511,14 @@
           </article>
           <article class="footer__item">
             <p class="footer__text">
-              или звоните по телефону: +7 (984) 270-44-47
+              или звоните по телефону: <br />
+              +7 (984) 270-44-47
             </p>
           </article>
         </section>
       </div>
     </section>
     <script src="./js/index.js"></script>
+    <script src="./js/burger.js"></script>
   </body>
 </html>

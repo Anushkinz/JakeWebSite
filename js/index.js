@@ -11,19 +11,19 @@ questions.forEach(questionItem => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-    const myHiddenElement = document.querySelector('.header');
+  const myHiddenElement = document.querySelector('.header');
 
+  function handleScroll() {
     const viewportHeight = window.innerHeight;
-    const scrollThreshold = viewportHeight; 
+    const scrollThreshold = viewportHeight;
 
-    function handleScroll() {
-        if (window.scrollY > scrollThreshold) {
-            myHiddenElement.classList.add('is-visible');
-        } else {
-            myHiddenElement.classList.remove('is-visible');
-        }
+    if (window.scrollY > scrollThreshold) {
+      myHiddenElement.classList.add('is-visible');
+    } else {
+      myHiddenElement.classList.remove('is-visible');
     }
+  }
 
-    window.addEventListener('scroll', handleScroll);
-    handleScroll();
+  window.addEventListener('scroll', handleScroll);
+  handleScroll();
 });
