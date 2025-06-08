@@ -6,9 +6,10 @@
     <title>Document</title>
     <link rel="stylesheet" href="./styles/bootstrap.min.css" />
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/media.css">
   </head>
   <body>
-    <section class="header">
+     <section class="header">
       <div class="container">
         <div class="headerBlock">
           <div class="upHeader">
@@ -27,23 +28,29 @@
             </div>
           </div>
           <header>
-            <div class="mainLogo">
-              <a href="./index.html"
-                ><img
-                  src="https://optim.tildacdn.com/tild3264-6166-4366-a530-396138623865/-/resize/264x/-/format/webp/BAIKAL_TRACK_3.png"
-                  alt=""
-              /></a>
-            </div>
-            <div class="headerMenu">
-              <a href="">Афиша туров</a>
-              <a href="">Расписание</a>
-              <a href="">О нас</a>
-              <a href="">Команда</a>
-              <a href="">FAQ</a>
-              <a href="">Контакты</a>
-            </div>
-            <div class="headerButton">
-              <a href="">записаться в тур</a>
+              <a href="./index.html" class="mainLogo">
+              <img
+                src="https://optim.tildacdn.com/tild3264-6166-4366-a530-396138623865/-/resize/264x/-/format/webp/BAIKAL_TRACK_3.png"
+                alt=""
+              />
+            </a>
+            <article class="header__controllers">
+              <div class="headerMenu">
+                <a href="./tour.html">Афиша туров</a>
+                <a href="">Расписание</a>
+                <a href="">О нас</a>
+                <a href="">Команда</a>
+                <a href="">FAQ</a>
+                <a href="">Контакты</a>
+              </div>
+              <div class="headerButton">
+                <a class="headerButton__link" href="">записаться в тур</a>
+              </div>
+            </article>
+            <div class="hamburger hamburger--slider">
+              <div class="hamburger-box">
+                <div class="hamburger-inner"></div>
+              </div>
             </div>
           </header>
         </div>
@@ -406,5 +413,6 @@
       </div>
     </section>
     <script src="./js/index.js"></script>
+    <script src="./js/burger.js"></script>
   </body>
 </html>
