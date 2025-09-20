@@ -119,7 +119,7 @@ text-decoration: none;
 /* ------------------------- main section styles  */
 
 .main {
-  background: url("../images/mainBack.jpg");
+  background: url("../images/slide3.jpg");
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -129,8 +129,10 @@ text-decoration: none;
   align-items: center;
   flex-direction: column;
   font-size: 48px;
-  color: #78767c;
+  color: #fbfbfb;
+  text-transform: uppercase;
 }
+
 
 .application {
   background: #fffef8;
