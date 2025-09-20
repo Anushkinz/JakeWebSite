@@ -27,3 +27,11 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('scroll', handleScroll);
   handleScroll();
 });
+
+const tops = document.querySelectorAll(".reise__content-item");
+
+tops.forEach((topItem , index) => {
+  topItem.style.background = `url('./images/slide${index + 1}.jpg')`;
+  topItem.style.backgroundPosition = "center";
+  topItem.style.backgroundSize = "cover";
+})
